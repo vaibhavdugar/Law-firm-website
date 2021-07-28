@@ -1,0 +1,905 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+/* Navigation Bar */
+#upper-navbar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.phone{
+    padding: 13px;
+    font-family: 'Merriweather', serif;
+    font-size: 0.9rem;
+    margin-right: 240px;
+}
+.phone-icon{
+    display: flex;
+    height: 18px;
+    width: 18px;
+    padding: 0px 45px;
+    margin-right: -45px;
+}
+.other-icons{
+    position: absolute;
+    right: 38px;
+    display: flex;
+}
+.icons{
+    height: 18px;
+    width: 18px;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+.icons:hover{
+    background-color: rgb(211, 170, 109);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    height: 95px;
+}
+#navbar .items{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.items li a{
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 1.3rem;
+    font-family: 'DM Serif Display', serif;
+    transition: all 0.3s ease-in-out;
+
+}
+.items li a:hover{
+    color: rgb(211, 170, 109);
+}
+#navbar .logo{
+    color: white;
+    padding: 0px 40px;
+    margin-top: -3px;
+    font-family: 'EB Garamond', serif;
+    font-size: 4.5rem;
+    color: rgb(211, 170, 109);
+}
+
+/* Introduction about Us / Home Page*/
+#home{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    background: url('Images/bg.jpg') no-repeat center center/cover;
+    top: 145px;
+    opacity: 0.9;
+    z-index: -1;
+}
+.intro{
+   padding: 40px;
+   padding-top: 0px;
+   font-style: italic;
+   font-family: 'Merriweather', serif;
+   font-size: 1.2rem;
+}
+#home h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    line-height: 3rem;
+    padding: 20px 0px;
+    animation: left-to-right 0.6s ease-in 1 forwards;
+}
+@keyframes left-to-right{
+    from{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(3px);
+    }
+}
+#home .info{
+    padding-left: 40px;
+    animation: right-to-left 1.3s ease-in 1 forwards;
+}
+@keyframes right-to-left{
+    from{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(3px);
+    }
+}
+#home .btn1{
+    margin-right: 20px;
+    margin-top: -20px;
+    background-color: transparent;
+    padding: 6px 10px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(201, 150, 74);
+    border: 2px solid rgb(201, 150, 74);
+    color: white;
+    font-weight: 590;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 4px black;
+}
+#home .btn1:hover{
+    background-color: transparent;
+    color: black;
+}
+#home .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* About section */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.cards{
+    border-right: 1px solid rgb(73, 72, 72);
+    height: 180px;
+    width: 25%;
+    background-color: black;
+}
+.cards .content{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content img{
+    padding-bottom: 8px;
+    height: 35px;
+    width: 35px;
+}
+.content p{
+    padding: 5px 0px;
+    text-align: center;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.1rem ;
+    color: rgb(192, 190, 190);
+}
+.content h3{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.8rem;
+    color: white;
+}
+/* About Us section */
+#about-us{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding: 80px 0px;
+}
+.first-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 62%;
+    padding: 40px 0px;
+    position: relative;
+    left: 150px;
+    /* margin: 0px 30px; */
+    /* padding-bottom: 40px; */
+    margin-top: 82px;
+    box-shadow: -1px -1px 12px -2px black;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    /* padding-bottom: 50px; */
+}
+.first-box h2{
+    margin-bottom: 40px;
+    font-size: 3rem;
+    /* padding-top: 30px; */
+    padding: 0px 40px;
+}
+.first-box h2 span{
+    color: rgb(201, 150, 74);
+    font-family: 'EB Garamond', serif;
+}
+.first-box h3{
+    margin-bottom: 8px;
+    color: black;
+    font-size: 1.3rem;
+    padding: 0px 40px;
+}
+.first-box p{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: rgb(59, 59, 59);
+    padding: 0px 40px;
+    padding-right: 30px;
+}
+.first-box button{
+    width: 40%;
+    padding: 5px 10px;
+    border: 2.3px solid rgb(201, 150, 74);
+    background-color: transparent;
+    /* padding: 5px 10px; */
+    cursor: pointer;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1rem;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.first-box button:hover{
+    background-color: rgb(201, 150, 74);
+    color: white;
+}
+.second-box{
+    z-index: -1;
+    padding: 10px;
+    padding-right: 170px;
+    /* padding: 0px 250px; */
+    /* margin-left: -500px; */
+    position: relative;
+}
+.second-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* Our Practice areas */
+#practices{
+    color: white;
+    padding-bottom: 145px;
+    height: 100%;
+    width: 100%;
+}
+#practices h2, #text{
+    text-align: center;
+    padding-bottom: 80px;
+    margin: 0px 60px;
+}
+#practices #text{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(233, 231, 231);
+    margin: 0px 50px;
+}
+#practices h2{
+    padding-top: 53px;
+    padding-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.2rem;
+}
+#practices h2 span{
+    color: rgb(211, 170, 109);
+}
+.blocks{
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-gap: 1rem;
+    justify-content: center;
+    
+}
+.block-items{
+    padding: 10px 10px;
+    padding-left: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4e5050;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.block-items:hover{
+    box-shadow: 1px 1px 13px rgb(158, 157, 157);
+}
+.block-items h3{
+    margin-bottom: 16px;
+}
+.block-items p{
+    font-size: 0.9rem;
+    color: rgb(233, 231, 231);
+}
+.block-items img{
+    height: 40px;
+    width: 40px;
+    margin-left: -71px;
+    margin-bottom: -42px;
+}
+#practices::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url('Images/bg1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    z-index: -1; 
+    filter: brightness(30%);
+    opacity: 0.85;
+}
+/* Our Expert Attorneys */
+#attorneys{
+    padding-bottom: 83px;
+    margin-top: -78px;
+    background-color: #eee;
+    text-align: center;
+}
+#attorneys h2{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+#attorneys p{
+    margin: 0px 50px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.1rem;
+}
+#attorneys h2 span{
+    color: rgb(201, 150, 74);
+}
+.four-boxes{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.people img{
+    height: 290px;
+    width: 230px;
+    margin-bottom: 12px;
+    position: relative;
+}
+.people h3, span{
+    font-family: 'Quicksand', sans-serif;
+}
+.people h3{
+    margin-top: 20px;
+    color: white;
+}
+.people{
+    margin: 0px 25px;
+    box-shadow: 3px 3px 10px rgb(194, 194, 194);
+    background-color: black;
+    height: 390px;
+}
+.people span{
+    color: rgb(189, 187, 187);
+}
+.social-media img{
+    height: 16px;
+    width: 16px;
+    margin: 10px;
+    padding-top: 12px;
+    top: 10px;
+}
+.social-media{
+    position: relative;
+    top: -120px;
+    padding: 10px 3px;
+    background-color: rgb(211, 170, 109);
+    transition: all 0.3s ease-in-out;
+}
+.social-media:hover{
+    padding: 10px 36px;
+}
+/* Why choose us and appointment form */
+.appointment{
+    height: 100%;
+    width: 100%;
+}
+.appointment::before{
+    content: "";
+    position: absolute;
+    height: 540px;
+    width: 100%;
+    background: url('Images/bg2.jpeg') no-repeat center center/cover;
+    filter: brightness(30%);
+    opacity: 0.85;
+    z-index: -1;
+    background-attachment: fixed;
+}
+.choose{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 45px;
+    margin: auto; 
+}
+.choose h2{
+    font-size: 2.2rem;
+    padding: 20px;
+    padding-top: 28px;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+.choosing-reason{
+    width: 60%;
+    background-color: #4e5050;
+    padding: 7px 20px;
+    padding-left: 80px;
+    margin: 10px;
+    padding-top: 1px;
+    transition: all 0.3s ease-in-out;
+}
+.choosing-reason:hover{
+    box-shadow: 1px 1px 13px rgb(158, 157, 157);
+}
+.choosing-reason h3{
+    padding-bottom: 8px;
+    margin-top: -5px;
+    font-family: 'Quicksand', sans-serif;
+}
+.choose h2, h3{
+    color: white;
+}
+.choose h2 span{
+    color: rgb(211, 170, 109);
+}
+.choose p{
+    color: rgb(233, 231, 231);
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 10px;
+}
+.choosing-reason img{
+    margin-left: -55px;
+    margin-bottom: -34px;
+}
+.flex{
+    display: flex;
+}
+/* Appointment form */
+#form-section{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 15px;
+    /* padding-bottom: 25px; */
+    /* margin-bottom: 10px; */
+}
+.appointment-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    /* margin-top: 20px; */
+    width: 600px;
+    /* margin-bottom: 30px; */
+}
+.form-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px rgb(94, 93, 93);
+}
+.form-image{
+    padding: 40px;
+    padding-top: 55px;
+}
+.appointment-form h2{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.2rem;
+    margin-top: 20px;
+}
+.appointment-form form input{
+    padding: 13px 10px 13px;
+    /* padding-right: 84px; */
+    background-color: #eee;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    /* border: 2px solid red; */
+    width: 84%;
+}
+.appointment-form select{
+    padding: 13px 10px 13px;
+    /* padding-right: 347px; */
+    background-color: #eee;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    width: 87%;
+}
+.appointment-form textarea{
+    padding: 13px 10px 13px;
+    padding-bottom: 60px;
+    /* padding-right: 358px; */
+    width: 84%;
+    margin-bottom: -20px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #eee;
+    border: none;
+}
+.appointment-form form{
+    margin-top: 27px;
+    text-align: center;
+}
+.form-box{
+    padding-bottom: 30px;
+}
+.form-box #name, #email{
+    width: 40%;
+}
+.form-box button{
+    padding: 10px 25px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(211, 170, 109);
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+.form-box button:hover{
+    color: white;
+}
+/* Last section */
+#newsletter{
+    background-color: black;
+    padding-bottom: 37px;
+}
+.outer-box{
+    display: flex;
+    justify-content: center;
+    padding: 0px 150px;
+}
+.columns .social-handles a{
+    display: flex;
+    height: 33px;
+    width: 33px;
+    padding: 5px;
+}
+.social-handles{
+    display: flex;
+    margin-top: 13px;
+    margin-left: -5px;
+}
+.social-handles a img{
+    background-color: rgb(211, 170, 109);
+    padding: 7px;
+    border: 2px solid rgb(211, 170, 109);
+    border-radius: 32%;
+}
+.address .our-name, form{
+    text-align: center;
+}
+.address .our-name{
+    padding: 55px 55px 20px;
+    font-size: 2.2rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.form-input button{
+    padding: 7px 30px;
+    border: none;
+    background-color: rgb(211, 170, 109);
+    cursor: pointer;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.form-input button:hover{
+    color: white;
+}
+.form-input input{
+    padding: 7px;
+    padding-right: 65px;
+    margin-bottom: 13px;
+    border: none;
+    background-color: rgb(243, 241, 241);
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1rem;
+}
+.columns{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    padding: 30px 10px;
+    padding-left: 50px;
+}
+.outer-box{
+    display: flex;
+    padding: 0px 100px;
+}
+.columns h2{
+    padding-bottom: 20px;
+    font-family: 'EB Garamond', serif;
+    color: white;
+}
+.columns .contact-images{
+    height: 22px;
+    width: 22px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+.columns p{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(197, 195, 195);
+}
+.contact-box{
+    display: flex;
+}
+.columns h4{
+    padding-bottom: 10px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.columns .vacation{
+    padding-top: 10px;
+}
+
+/* Copyright */
+.copyright{
+    display: flex;
+    justify-content: center;
+    height: 85px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: black;
+    font-size: 1.1rem;
+    background-color: rgb(211, 170, 109);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1141px){
+    .blocks{
+        grid-template-columns: repeat(auto-fit, minmax(279px, 600px));
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #practices::before{
+        height: 216%;
+    }
+    #practices{
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 1070px){
+    .four-boxes{
+        flex-wrap: wrap;
+    }
+    .people{
+        margin-bottom: 25px;
+    }
+    #attorneys{
+        padding-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 1010px){
+    #navbar{
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        /* padding: 10px; */
+        /* height: 160px; */
+        /* padding-bottom: 17px; */
+    }
+    .items li a{
+        padding: 0px 8px;
+        display: block;
+        background-color: black;
+        overflow: hidden;
+        font-size: 1.2rem;
+    }
+    .items{
+        text-align: center;
+        /* border: 2px solid white; */
+        margin-bottom: 15px;
+    }
+    #navbar .logo{
+        /* border: 2px solid white; */
+        padding-top: 5px;
+        margin-bottom: -7px;
+        font-size: 3.4rem; 
+    }
+    #about-us{
+        flex-direction: column;
+        /* margin-top: -30px; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .second-box{
+        /* border: 2px solid black; */
+        padding: 30px;
+        text-align: center;
+        margin-bottom: -40px;
+    }
+    .first-box{
+        width: 75%;
+        /* margin: 0px 30px; */
+        margin-bottom: 50px;
+        /* margin-top: 80px; */
+        margin: auto;
+        /* display: inline-block; */
+        /* position: relative; */
+        left: 0px;
+        
+        /* margin-left: -100px; */
+        /* margin-left: -50px; */
+        /* left: 0px; */
+    }
+    
+}
+@media only screen and (max-width: 710px){
+    .outer-box{
+        flex-direction: column;
+        position: relative;
+        left: -70px;
+    }
+}
+@media only screen and (max-width: 635px){
+    .about{
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #eee;
+    }
+    .about .cards{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    #upper-navbar{
+        height: 70px;
+    }
+    #home::before{
+        height: 100%;
+    }
+    #form-section{
+        flex-direction: column;
+    }
+    #form-section .appointment-form{
+        /* border: 2px solid red; */
+        width: 99%;
+        height: 100%;
+        margin: auto;
+    }
+    #form-section .form-image{
+        height: 60%;
+        width: 60%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 512px){
+    .phone{
+        margin-right: 0px;
+        text-align: center;
+    }
+    .phone-icon{
+        padding-left: 20px;
+        padding-right: 32px;
+    }
+    .other-icons{
+        width: 100%;
+        left: 0px;
+        justify-content: center;
+        top: 40px;
+    }
+    .other-icons a{
+        visibility: hidden;
+        display: none;
+    }
+}
+@media only screen and (max-width: 410px){
+    .columns{
+        width: 140px;
+        margin-left: -15px;
+    }
+}
+@media only screen and (max-width: 401px){
+    .items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: -1px;
+    }
+    #navbar .logo{
+        font-size: 3rem;
+        padding-bottom: 13px;
+    }
+    .items li a{
+        margin-top: -8px;
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+    #navbar{
+        height: 120px;
+    }
+    #home .intro h2{
+        font-size: 2.3rem;
+        padding-right: 20px;
+        width: 100%;
+        line-height: 2.3rem;
+    }
+    #home .intro{
+        font-size: 1.1rem;
+    }
+    #home .box{
+        margin-left: -20px;   
+    }
+    .copyright{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 663px){
+    .appointment::before{
+        height: 620px;
+    }
+}
+@media only screen and (max-width: 509px){
+    .appointment::before{
+        height: 680px;
+    }
+}
+@media only screen and (max-width: 412px){
+    .appointment::before{
+        height: 750px;
+    }
+}
+@media only screen and (max-width: 339px){
+    .appointment::before{
+        height: 800px;
+    }
+}
+@media only screen and (max-width: 299px){
+    .appointment::before{
+        height: 855px;
+    }
+}
+@media only screen and (max-width: 287px){
+    .appointment::before{
+        height: 935px;
+    }
+}
+@media only screen and (max-width: 286px){
+    .appointment::before{
+        padding-bottom: 58px;
+    }
+}
+@media only screen and (max-width: 968px){
+    #form-section{
+        margin-top: -10px;
+    }
+}
+@media only screen and (max-width: 962px) and (min-width: 662px){
+    #form-section{
+        margin-top: -30px;
+    }
+}
+
+
+
