@@ -92,7 +92,6 @@
 }
 .social-handles{
     display: flex;
-    flex-wrap: wrap;
     margin-top: 13px;
     margin-left: -5px;
 }
