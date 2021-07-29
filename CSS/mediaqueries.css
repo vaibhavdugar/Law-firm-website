@@ -2,7 +2,7 @@
 @media only screen and (max-width: 635px){
     #home::before{
         top: 145px;
-        height: 750px;
+        height: 7050px;
     }
     #home{
         height: 600px;
@@ -13,12 +13,6 @@
         grid-template-columns: repeat(auto-fit, minmax(279px, 600px));
         margin-left: 30px;
         margin-right: 30px;
-    }
-    #practices::before{
-        height: 800%;
-    }
-    #practices{
-        height: 700%;
     }
 }
 @media only screen and (max-width: 1070px){
@@ -106,6 +100,11 @@
         height: 60%;
         width: 60%;
         margin: auto;
+    }
+}
+@media only screen and (max-width: 527px){
+    #upper-navbar .phone{
+        font-size: 0.8rem;
     }
 }
 @media only screen and (max-width: 512px){

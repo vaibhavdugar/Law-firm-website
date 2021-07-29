@@ -86,18 +86,19 @@
 }
 .columns .social-handles a{
     display: flex;
-    height: 33px;
-    width: 33px;
+    height: 27px;
+    width: 27px;
     padding: 5px;
 }
 .social-handles{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 13px;
     margin-left: -5px;
 }
 .social-handles a img{
     background-color: rgb(211, 170, 109);
-    padding: 7px;
+    padding: 5px;
     border: 2px solid rgb(211, 170, 109);
     border-radius: 32%;
 }
