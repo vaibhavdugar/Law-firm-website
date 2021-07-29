@@ -78,7 +78,7 @@ html{
 
 /* Home Page */
 #home{
-    height: 80vh;
+    height: 700px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -88,10 +88,9 @@ html{
 #home::before{
     content: "";
     position: absolute;
-    height: 80vh;
+    height: 700px;
     width: 100%;
     background: url('Images/bg.jpg') no-repeat center center/cover;
-    top: 145px;
     opacity: 0.9;
     z-index: -1;
 }
