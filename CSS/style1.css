@@ -1,0 +1,198 @@
+/* Our Practice areas */
+#practices{
+    color: white;
+    padding-bottom: 145px;
+    height: 100%;
+    width: 100%;
+}
+#practices::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background: url('Images/bg1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    z-index: -1; 
+    filter: brightness(30%);
+    opacity: 0.85;
+}
+#practices h2, #text{
+    text-align: center;
+    padding-bottom: 80px;
+    margin: 0px 60px;
+}
+#practices #text{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(233, 231, 231);
+    margin: 0px 50px;
+}
+#practices h2{
+    padding-top: 53px;
+    padding-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.2rem;
+}
+#practices h2 span{
+    color: rgb(211, 170, 109);
+}
+.blocks{
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-gap: 1rem;
+    justify-content: center;
+    
+}
+.block-items{
+    padding: 10px 10px;
+    padding-left: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4e5050;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.block-items:hover{
+    box-shadow: 1px 1px 13px rgb(158, 157, 157);
+}
+.block-items h3{
+    margin-bottom: 16px;
+}
+.block-items p{
+    font-size: 0.9rem;
+    color: rgb(233, 231, 231);
+}
+.block-items img{
+    height: 40px;
+    width: 40px;
+    margin-left: -71px;
+    margin-bottom: -42px;
+}
+
+/* Our Expert Attorneys */
+#attorneys{
+    padding-bottom: 83px;
+    margin-top: -78px;
+    background-color: #eee;
+    text-align: center;
+}
+#attorneys h2{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+#attorneys p{
+    margin: 0px 50px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.1rem;
+}
+#attorneys h2 span{
+    color: rgb(201, 150, 74);
+}
+.four-boxes{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.people img{
+    height: 290px;
+    width: 230px;
+    margin-bottom: 12px;
+    position: relative;
+}
+.people h3, span{
+    font-family: 'Quicksand', sans-serif;
+}
+.people h3{
+    margin-top: 20px;
+    color: white;
+}
+.people{
+    margin: 0px 25px;
+    box-shadow: 3px 3px 10px rgb(194, 194, 194);
+    background-color: black;
+    height: 390px;
+}
+.people span{
+    color: rgb(189, 187, 187);
+}
+.social-media img{
+    height: 16px;
+    width: 16px;
+    margin: 10px;
+    padding-top: 12px;
+    top: 10px;
+}
+.social-media{
+    position: relative;
+    top: -120px;
+    padding: 10px 3px;
+    background-color: rgb(211, 170, 109);
+    transition: all 0.3s ease-in-out;
+}
+.social-media:hover{
+    padding: 10px 36px;
+}
+
+/* Why Choose Us */
+.choose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 45px;
+}
+.choose::before{
+    content: "";
+    position: absolute;
+    height: 1000px;
+    width: 100%;
+    background: url('Images/bg2.jpeg') no-repeat center center/cover;
+    filter: brightness(30%);
+    opacity: 0.85;
+    z-index: -1;
+    background-attachment: fixed;
+}
+.choose h2{
+    font-size: 2.2rem;
+    padding: 20px;
+    padding-top: 28px;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+.choosing-reason{
+    width: 60%;
+    background-color: #4e5050;
+    padding: 7px 20px;
+    padding-left: 80px;
+    margin: 10px;
+    padding-top: 1px;
+    transition: all 0.3s ease-in-out;
+}
+.choosing-reason:hover{
+    box-shadow: 1px 1px 13px rgb(158, 157, 157);
+}
+.choosing-reason h3{
+    padding-bottom: 8px;
+    margin-top: -5px;
+    font-family: 'Quicksand', sans-serif;
+}
+.choose h2, h3{
+    color: white;
+}
+.choose h2 span{
+    color: rgb(211, 170, 109);
+}
+.choose p{
+    color: rgb(233, 231, 231);
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 10px;
+}
+.choosing-reason img{
+    margin-left: -55px;
+    margin-bottom: -34px;
+}

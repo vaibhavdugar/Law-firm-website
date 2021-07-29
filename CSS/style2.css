@@ -1,0 +1,184 @@
+/* Appointment form */
+#form-section{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+}
+.appointment-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    width: 600px;
+}
+.form-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px rgb(94, 93, 93);
+}
+.form-image{
+    padding: 40px;
+}
+.appointment-form h2{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.2rem;
+    margin-top: 20px;
+}
+.appointment-form form input{
+    padding: 13px 10px 13px;
+    background-color: #eee;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    width: 84%;
+}
+.appointment-form select{
+    padding: 13px 10px 13px;
+    background-color: #eee;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    width: 87%;
+}
+.appointment-form textarea{
+    padding: 13px 10px 13px;
+    padding-bottom: 60px;
+    width: 84%;
+    margin-bottom: -20px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #eee;
+    border: none;
+}
+.appointment-form form{
+    margin-top: 27px;
+    text-align: center;
+}
+.form-box{
+    padding-bottom: 30px;
+}
+.form-box #name, #email{
+    width: 40%;
+}
+.form-box button{
+    padding: 10px 25px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(211, 170, 109);
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+.form-box button:hover{
+    color: white;
+}
+
+/* Last section */
+#newsletter{
+    background-color: black;
+    padding-bottom: 37px;
+}
+.outer-box{
+    display: flex;
+    justify-content: center;
+    padding: 0px 150px;
+}
+.columns .social-handles a{
+    display: flex;
+    height: 33px;
+    width: 33px;
+    padding: 5px;
+}
+.social-handles{
+    display: flex;
+    margin-top: 13px;
+    margin-left: -5px;
+}
+.social-handles a img{
+    background-color: rgb(211, 170, 109);
+    padding: 7px;
+    border: 2px solid rgb(211, 170, 109);
+    border-radius: 32%;
+}
+.address .our-name, form{
+    text-align: center;
+}
+.address .our-name{
+    padding: 55px 55px 20px;
+    font-size: 2.2rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.form-input button{
+    padding: 7px 30px;
+    border: none;
+    background-color: rgb(211, 170, 109);
+    cursor: pointer;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.form-input button:hover{
+    color: white;
+}
+.form-input input{
+    padding: 7px;
+    padding-right: 65px;
+    margin-bottom: 13px;
+    border: none;
+    background-color: rgb(243, 241, 241);
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1rem;
+}
+.columns{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    padding: 30px 10px;
+    padding-left: 50px;
+}
+.outer-box{
+    display: flex;
+    padding: 0px 100px;
+}
+.columns h2{
+    padding-bottom: 20px;
+    font-family: 'EB Garamond', serif;
+    color: white;
+}
+.columns .contact-images{
+    height: 22px;
+    width: 22px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+.columns p{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(197, 195, 195);
+}
+.contact-box{
+    display: flex;
+}
+.columns h4{
+    padding-bottom: 10px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.columns .vacation{
+    padding-top: 10px;
+}
+
+/* Copyright */
+.copyright{
+    display: flex;
+    justify-content: center;
+    height: 85px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: black;
+    font-size: 1.1rem;
+    background-color: rgb(211, 170, 109);
+}
